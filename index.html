@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Not Found">
+        </div>
+        <ul>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </ul>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input  type="search">
+            
+        </div>
+    </header>
+    <!-- container -->
+<div class="containers">
+    <!-- Sidebar Left -->
+        <div class="sidebar">
+            <ul>
+                <a href="#" onclick="home()"><i class="fa-solid fa-house fa-beat"></i>
+                    Home</a>
+                <a href="#" onclick="calories()"><i class="fa-solid fa-calculator fa-beat"></i>
+                    Calculate calories</a>
+                <a href="#" onclick="bmi()"><i class="fa-solid fa-gauge-high fa-beat"></i>
+                    Calculate BMI</a>
+                <a href="#" onclick="weight()"><i class="fa-solid fa-weight-scale fa-beat"></i>
+                    Calculate weight</a>
+            </ul>
+        </div>
+    <!-- Home Page -->
+        <div class="homepage">
+            <div class="card">
+                <img src="images/Calculate calories.jpg" alt="Not Found">
+                <h2>Calculate Calories</h2>
+                <a href="#">Calculate</a>
+            </div>
+            <div class="card">
+                <img src="images/bmi.jpg" alt="Not Found">
+                <h2>Calculate BMI</h2>
+                <a href="#">Calculate</a>
+            </div>
+            <div class="card">
+                <img src="images/Calculate the ideal weight.jpg" alt="Not Found">
+                <h2>Calculate weight</h2>
+                <a href="#">Calculate</a>
+            </div>
+        </div>
+                <!-- Footer -->
+        <!-- Calculate calories page -->
+        <div class="maincalories">
+        <div class="calories">
+            <h1>Calculate Calories Now</h1>
+            <div class="inputs">
+                <select id="calcgrander">
+                    <option selected disabled>Grander</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+                <input maxlength="6" required ="number" placeholder="Weight (kg)" id="calcweight">
+                <input maxlength="6" required ="number" placeholder="Length(cm)" id="calclength">
+                <input maxlength="3" required ="number" placeholder="Age" id="calcage">
+                <a href="#" onclick="calculate()">Calculate</a>
+                <div class="alert-danger">
+                    <h4>Please Enter The Inputs </h4>
+                </div>
+                <div class="alert-success">
+                    <h4>Your Average Calorie Per Day Is</h4>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Calculate BMI Page -->
+        <div class="mainbmi">
+            <div class="bmi">
+                <h1>Calculate BMI Now</h1>
+                <div class="inputs">
+                    <input type="number" placeholder="Weight (kg)" id="bmiweight">
+                    <input type="number" placeholder="Length (cm)" id="bmilength">
+                    <a href="#" onclick="btnbmi()">Calculate</a>
+                </div>
+                <div class="text">
+                    <h4 class="error-bmi">Please Enter The Inputs:</h4>
+                    <h4 class="result-bmi">Your BMI:</h4>
+                    <h4 class="under">Under Weight <img src="images/small body.jpg" alt=""></h4>
+                    <h4 class="healthy">Healthy Weight <img src="images/normal body.jpg" alt=""></h4>
+                    <h4 class="over">Over Weight <img src="images/fat body.jpg" alt=""></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Calculate ideal weight Page -->
+</div>
+
+    <script src="home.js"></script>
+</body>
+</html>
